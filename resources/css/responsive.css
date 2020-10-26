@@ -1,0 +1,89 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media only screen and (max-width: 1200px){
+    .row{
+        max-width: 100%;
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #process .grid-process-container,
+    #portfolio .grid-portfolio-container {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    #portfolio .grid-portfolio-container{
+        -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+    }
+    #portfolio .grid-portfolio-item:nth-child(5) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #hero{
+        height: 50vh;
+    }
+    #hero .hero-text-box h2{
+        font-size: 4rem;
+    }
+    #about{
+        padding: 7rem;
+    }
+
+    #about .grid-about-container{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .paul{
+        width: 60%;
+    }
+    #about .grid-about-container p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #hero .hero-text-box h2{
+        font-size: 3rem;
+    }
+    #hero .hero-text-box h2::after{
+        top: 45%;
+    }
+    .paul{
+        height: 25rem;
+    }
+    #process .grid-process-container,
+    #experience .grid-experience-container,
+    #portfolio .grid-portfolio-container,
+    #contact .grid-contact-container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    #portfolio .portfolio-btn .btn{
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #hero .hero-text-box h2{
+        font-size: 2.2rem;
+        padding-top: .7rem;
+    }
+    #hero .hero-text-box h2::after{
+        top: 35%;
+    }
+    .paul{
+        height: 17rem;
+    }
+}
